@@ -7,7 +7,7 @@ export function BoundaryNode({ data, selected }: { data: any, selected: boolean 
         isVisible={selected} 
         minWidth={200} 
         minHeight={150} 
-        lineClassName="border-slate-400"
+        lineClassName="border-slate-400 pointer-events-auto"
         handleClassName="w-3 h-3 bg-white border-2 border-slate-400 rounded-sm pointer-events-auto"
       />
       
