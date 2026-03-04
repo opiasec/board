@@ -1,4 +1,3 @@
-import React from 'react';
 import { NodeResizer } from '@xyflow/react';
 
 export function BoundaryNode({ data, selected }: { data: any, selected: boolean }) {

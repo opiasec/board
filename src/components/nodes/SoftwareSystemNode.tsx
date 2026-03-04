@@ -1,4 +1,3 @@
-import React from 'react';
 import { Handle, Position } from '@xyflow/react';
 
 export function SoftwareSystemNode({ data, selected }: { data: any, selected: boolean }) {

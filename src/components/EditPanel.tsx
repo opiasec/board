@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Node, Edge } from '@xyflow/react';
 import { X, Trash2, Link as LinkIcon } from 'lucide-react';
 
