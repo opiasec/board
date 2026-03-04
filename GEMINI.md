@@ -22,6 +22,15 @@ The project is built with **React**, **TypeScript**, and **Vite**, utilizing **R
     -   `PersonNode`, `SoftwareSystemNode`, `ContainerNode`, `BoundaryNode` (C4 Model)
     -   `AssetNode`, `ThreatNode`, `ControlNode` (Threat Modeling)
 
+## Git Workflow
+- **No direct pushes to main:** All changes should be made in feature branches and submitted via Pull Requests.
+- **Confirmation required:** Always ask for permission before pushing changes to the remote repository.
+- **Workflow:**
+    1. Create a feature branch: `git checkout -b feature/name`.
+    2. Commit changes.
+    3. Ask for permission to push and create a PR.
+    4. Push to the feature branch.
+
 ## Building and Running
 
 ### Development
