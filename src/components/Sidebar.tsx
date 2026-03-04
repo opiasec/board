@@ -2,10 +2,10 @@ import React from 'react';
 import { User, Box, Database, Layout, Coins, AlertTriangle, ShieldCheck } from 'lucide-react';
 
 const c4NodeTypes = [
-  { type: 'person', label: 'Person', icon: <User size={18} />, color: 'bg-[#08427b]' },
-  { type: 'softwareSystem', label: 'Software System', icon: <Box size={18} />, color: 'bg-[#1168bd]' },
-  { type: 'container', label: 'Container', icon: <Database size={18} />, color: 'bg-[#438dd5]' },
-  { type: 'boundary', label: 'Boundary', icon: <Layout size={18} />, color: 'bg-gray-100 border-dashed border-gray-400 text-gray-600' },
+  { type: 'person', label: 'Person', icon: <User size={18} />, color: 'bg-slate-700' },
+  { type: 'softwareSystem', label: 'Software System', icon: <Box size={18} />, color: 'bg-slate-600' },
+  { type: 'container', label: 'Container', icon: <Database size={18} />, color: 'bg-slate-500' },
+  { type: 'boundary', label: 'Boundary', icon: <Layout size={18} />, color: 'bg-slate-50 border-dashed border-slate-300 text-slate-500' },
 ];
 
 const threatNodeTypes = [
@@ -28,7 +28,7 @@ export function Sidebar() {
           {c4NodeTypes.map((node) => (
             <div
               key={node.type}
-              className={`flex items-center gap-3 p-3 rounded-md cursor-grab active:cursor-grabbing text-xs font-medium transition-all hover:ring-2 hover:ring-blue-200 ${
+              className={`flex items-center gap-3 p-3 rounded-md cursor-grab active:cursor-grabbing text-xs font-medium transition-all hover:ring-2 hover:ring-slate-200 ${
                 node.type === 'boundary' ? 'bg-gray-50 border-2 border-dashed border-gray-300' : `${node.color} text-white shadow-sm`
               }`}
               onDragStart={(event) => onDragStart(event, node.type)}

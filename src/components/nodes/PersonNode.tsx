@@ -1,9 +1,17 @@
-import { Handle, Position } from '@xyflow/react';
+import { Handle, Position, NodeResizer } from '@xyflow/react';
 import { User } from 'lucide-react';
 
 export function PersonNode({ data, selected }: { data: any, selected: boolean }) {
   return (
-    <div className={`px-4 py-3 shadow-lg rounded-md bg-[#08427b] border-2 text-white min-w-[150px] text-center transition-all ${selected ? 'border-blue-400 ring-4 ring-blue-400/30 shadow-blue-400/20' : 'border-[#073b6e]'}`}>
+    <div className={`w-full h-full px-4 py-3 shadow-lg rounded-md bg-slate-700 border-2 text-white min-w-[150px] min-h-[80px] text-center transition-all ${selected ? 'border-slate-400 ring-4 ring-slate-400/30 shadow-slate-400/20' : 'border-slate-800'}`}>
+      <NodeResizer 
+        isVisible={selected} 
+        minWidth={150} 
+        minHeight={80} 
+        lineClassName="border-slate-400"
+        handleClassName="w-3 h-3 bg-white border-2 border-slate-400 rounded-sm"
+      />
+      
       <div className="flex justify-center mb-1">
         <User size={20} />
       </div>
@@ -13,8 +21,8 @@ export function PersonNode({ data, selected }: { data: any, selected: boolean })
         <div className="text-[10px] mt-2 border-t border-white/20 pt-1 italic">{data.description}</div>
       )}
       
-      <Handle type="target" position={Position.Top} className="w-2 h-2 !bg-blue-300" />
-      <Handle type="source" position={Position.Bottom} className="w-2 h-2 !bg-blue-300" />
+      <Handle type="target" position={Position.Top} className="w-2 h-2 !bg-slate-300" />
+      <Handle type="source" position={Position.Bottom} className="w-2 h-2 !bg-slate-300" />
     </div>
   );
 }

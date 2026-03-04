@@ -1,0 +1,241 @@
+{
+  "nodes": [
+    {
+      "id": "person-1",
+      "type": "person",
+      "position": {
+        "x": 463.60556286153115,
+        "y": 67.23218021922008
+      },
+      "data": {
+        "label": "User",
+        "description": "A personal banking customer",
+        "technology": ""
+      },
+      "measured": {
+        "width": 176,
+        "height": 119
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "node_1772651006439",
+      "type": "softwareSystem",
+      "position": {
+        "x": 472.50690508882906,
+        "y": 267.437672772008
+      },
+      "data": {
+        "label": "BankingApp",
+        "description": "",
+        "technology": ""
+      },
+      "style": {
+        "zIndex": 1
+      },
+      "measured": {
+        "width": 180,
+        "height": 75
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "node_1772651006441",
+      "type": "boundary",
+      "position": {
+        "x": 356.31127367288695,
+        "y": 24.05634196629461
+      },
+      "data": {
+        "label": "Internet",
+        "description": "",
+        "technology": ""
+      },
+      "style": {
+        "width": 300,
+        "height": 200,
+        "zIndex": -1
+      },
+      "measured": {
+        "width": 406,
+        "height": 344
+      },
+      "selected": false,
+      "dragging": false,
+      "width": 406,
+      "height": 344,
+      "resizing": false
+    },
+    {
+      "id": "node_1772651270509",
+      "type": "boundary",
+      "position": {
+        "x": 762.5648068796235,
+        "y": 25.094490677575493
+      },
+      "data": {
+        "label": "AWS",
+        "description": "",
+        "technology": ""
+      },
+      "style": {
+        "width": 300,
+        "height": 200,
+        "zIndex": -1
+      },
+      "measured": {
+        "width": 439,
+        "height": 344
+      },
+      "selected": false,
+      "dragging": false,
+      "width": 439,
+      "height": 344,
+      "resizing": false
+    },
+    {
+      "id": "node_1772651270510",
+      "type": "container",
+      "position": {
+        "x": 862.6622318871946,
+        "y": 271.15538094408885
+      },
+      "data": {
+        "label": "BFF",
+        "description": "",
+        "technology": "API"
+      },
+      "style": {
+        "zIndex": 1
+      },
+      "measured": {
+        "width": 180,
+        "height": 75
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "node_1772655005441",
+      "type": "asset",
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "data": {
+        "label": "AuthToken",
+        "description": "Token used by user to grap information from API",
+        "technology": ""
+      },
+      "style": {
+        "zIndex": 10
+      },
+      "parentId": "node_1772651006439",
+      "extent": "parent",
+      "measured": {
+        "width": 32,
+        "height": 30
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "node_1772655096443",
+      "type": "asset",
+      "position": {
+        "x": 35,
+        "y": 7.589427613181556
+      },
+      "data": {
+        "label": "Personal information",
+        "description": "",
+        "technology": ""
+      },
+      "style": {
+        "zIndex": 10
+      },
+      "parentId": "node_1772651006439",
+      "extent": "parent",
+      "measured": {
+        "width": 32,
+        "height": 30
+      },
+      "dragging": false,
+      "selected": true
+    },
+    {
+      "id": "node_1772655275149",
+      "type": "threat",
+      "position": {
+        "x": -4,
+        "y": 45
+      },
+      "data": {
+        "label": "Senstive Information Leakge",
+        "description": "",
+        "technology": ""
+      },
+      "style": {
+        "zIndex": 10
+      },
+      "parentId": "node_1772651006439",
+      "extent": "parent",
+      "measured": {
+        "width": 32,
+        "height": 30
+      },
+      "selected": false,
+      "dragging": false
+    }
+  ],
+  "edges": [
+    {
+      "source": "person-1",
+      "target": "node_1772651006439",
+      "label": "Uses",
+      "type": "smoothstep",
+      "labelStyle": {
+        "fill": "#666",
+        "fontWeight": 700,
+        "fontSize": 10
+      },
+      "labelBgPadding": [
+        8,
+        4
+      ],
+      "labelBgBorderRadius": 4,
+      "labelBgStyle": {
+        "fill": "#fff",
+        "fillOpacity": 0.8
+      },
+      "id": "xy-edge__person-1-node_1772651006439",
+      "selected": false
+    },
+    {
+      "source": "node_1772651006439",
+      "target": "node_1772651270510",
+      "label": "HTTPs",
+      "type": "smoothstep",
+      "labelStyle": {
+        "fill": "#666",
+        "fontWeight": 700,
+        "fontSize": 10
+      },
+      "labelBgPadding": [
+        8,
+        4
+      ],
+      "labelBgBorderRadius": 4,
+      "labelBgStyle": {
+        "fill": "#fff",
+        "fillOpacity": 0.8
+      },
+      "id": "xy-edge__node_1772651006439-node_1772651270510",
+      "selected": false
+    }
+  ],
+  "version": "1.0.0",
+  "timestamp": "2026-03-04T20:20:24.571Z"
+}
