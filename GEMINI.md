@@ -29,7 +29,7 @@ The project is built with **React**, **TypeScript**, and **Vite**, utilizing **R
     1. Create a feature branch: `git checkout -b feature/name`.
     2. Commit changes.
     3. Ask for permission to push and create a PR.
-    4. Push to the feature branch.
+    4. Push to the feature branch and create the Pull Request.
 
 ## Building and Running
 
